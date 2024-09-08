@@ -1,0 +1,90 @@
+.filter {
+  max-width: 340px;
+  position: relative;
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    color: $color-primary;
+  }
+
+  &__reset {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-grey;
+    position: absolute;
+    top: 5px;
+    right: 4px;
+  }
+
+  &__field {
+    margin-bottom: 30px;
+    grid-column: 2 span;
+    display: flex;
+
+    &_first {
+      margin-top: 30px;
+    }
+
+    &_output {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__field-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-primary;
+  }
+
+  &__flex {
+    display: flex;
+    gap: 10px;
+
+    &_column {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    padding: 9px 10px;
+    width: 165px;
+    line-height: 1;
+    font-family: inherit;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-grey;
+    }
+
+    &_select {
+      padding: 9px 10px;
+      width: 340px;
+      color: $color-grey;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-grey;
+    }
+  }
+  &__checkbox {
+    margin-right: 10px;
+  }
+
+  &__apply {
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+}
